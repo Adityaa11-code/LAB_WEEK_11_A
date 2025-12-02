@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/input_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter text..."
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/save_pref_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Save SharedPreferences"
+        app:layout_constraintTop_toBottomOf="@id/input_et"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/save_datastore_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Save DataStore"
+        app:layout_constraintTop_toBottomOf="@id/save_pref_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/pref_value_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SharedPref value:"
+        app:layout_constraintTop_toBottomOf="@id/save_datastore_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/datastore_value_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="DataStore value:"
+        app:layout_constraintTop_toBottomOf="@id/pref_value_tv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
